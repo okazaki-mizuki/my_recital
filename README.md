@@ -118,3 +118,6 @@
 
 MVPでは最も基本的なCRUDを実装し、レビュー投稿体験の価値を検証します。
 その後、ユーザー認証や星評価などを段階的に追加していきます。
+
+# 画面遷移図UPL
+https://www.figma.com/design/hZOdMhWKcEutAit6oAuVMG/my_recital?node-id=0-1&t=BMTfCAHRYOQTfrDe-1
