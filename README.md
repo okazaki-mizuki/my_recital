@@ -52,14 +52,12 @@
 
 - 星評価に独自の意味付け
 
-
-
 この「感動度」を軸にした星評価により、音楽体験の再現性を高める工夫をしています。
 
 # 機能候補
 * MVP
 
-演奏会の楽団名・指揮者・曲名・感想のCRUD機能
+- 演奏会の楽団名・指揮者・曲名・感想のCRUD機能
 
 - 投稿一覧・詳細ページ
 
@@ -120,4 +118,4 @@ MVPでは最も基本的なCRUDを実装し、レビュー投稿体験の価値�
 その後、ユーザー認証や星評価などを段階的に追加していきます。
 
 # 画面遷移図UPL
-https://www.figma.com/design/hZOdMhWKcEutAit6oAuVMG/my_recital?node-id=0-1&t=BMTfCAHRYOQTfrDe-1
+https://www.figma.com/design/yJBF4R1Z0J97kF0bthqZPj/my_recital?node-id=0-1&t=4AGYWeHzlGDiN2BD-1
