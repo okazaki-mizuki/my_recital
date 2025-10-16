@@ -119,3 +119,6 @@ MVPでは最も基本的なCRUDを実装し、レビュー投稿体験の価値�
 
 # 画面遷移図UPL
 https://www.figma.com/design/yJBF4R1Z0J97kF0bthqZPj/my_recital?node-id=0-1&t=4AGYWeHzlGDiN2BD-1
+
+# ER図
+https://drive.google.com/file/d/10WDDW2M4IUgf1X-fPnJr2iWulWESeVC3/view?usp=sharing
