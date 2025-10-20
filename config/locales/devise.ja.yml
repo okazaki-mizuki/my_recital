@@ -1,0 +1,60 @@
+ja:
+  activerecord:
+    models:
+      user: "ユーザー"
+    attributes:
+      user:
+        email: "メールアドレス"
+        password: "パスワード"
+        password_confirmation: "パスワード確認"
+        current_password: "現在のパスワード"
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              too_short: "は%{count}文字以上で入力してください"
+
+  errors:
+    messages:
+      not_saved: "%{resource}の保存に失敗しました。%{count} 件のエラーがあります。"
+
+  devise:
+    sessions:
+      signed_in: "ログインしました。"
+      signed_out: "ログアウトしました。"
+      already_signed_out: "すでにログアウトしています。"
+    registrations:
+      signed_up: "アカウント登録が完了しました。"
+      updated: "アカウント情報を更新しました。"
+      destroyed: "アカウントを削除しました。"
+    failure:
+      invalid: "メールアドレスまたはパスワードが違います。"
+      not_found_in_database: "メールアドレスまたはパスワードが違います。"
+      unauthenticated: "ログインしてください。"
+      unconfirmed: "アカウントの確認が必要です。"
+      locked: "アカウントはロックされています。"
+      timeout: "セッションがタイムアウトしました。再度ログインしてください。"
+      inactive: "アカウントが有効化されていません。"
+    passwords:
+      send_instructions: "パスワード再設定用のメールを送信しました。"
+      updated: "パスワードを変更しました。"
+    mailer:
+      confirmation_instructions:
+        subject: "アカウント確認メール"
+        greeting: "こんにちは %{email} さん！"
+        instruction: "以下のリンクからアカウントを確認してください："
+        action: "アカウントを確認する"
+      reset_password_instructions:
+        subject: "パスワード再設定メール"
+        greeting: "こんにちは %{email} さん！"
+        instruction: "パスワードを変更するには、以下のリンクをクリックしてください："
+        action: "パスワードを変更する"
+        ignore: "もしこのリクエストをしていない場合は、このメールを無視してください。"
+      unlock_instructions:
+        subject: "アカウントロック解除メール"
+        greeting: "こんにちは %{email} さん！"
+        instruction: "アカウントを解除するには、以下のリンクをクリックしてください："
+        action: "アカウントを解除する"
+    shared:
+      error_messages: "%{resource}の保存に失敗しました。%{count} 件のエラーがあります。"

@@ -1,0 +1,34 @@
+<%= form_with(model: review, local: true) do |form| %>
+  <% if review.errors.any? %>
+    <div class="alert alert-danger">
+      <h2><%= pluralize(review.errors.count, "件のエラー") %>があります:</h2>
+      <ul>
+        <% review.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="mb-3">
+    <%= form.label :orchestra, "楽団名", class: "form-label" %>
+    <%= form.text_field :orchestra, class: "form-control", required: true %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :conductor, "指揮者", class: "form-label" %>
+    <%= form.text_field :conductor, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :music, "曲名", class: "form-label" %>
+    <%= form.text_field :music, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :impression, "感想", class: "form-label" %>
+    <%= form.text_area :impression, class: "form-control", rows: 5, required: true %>
+  </div>
+
+  <%= form.submit review.new_record? ? "作成" : "更新", class: "btn btn-success" %>
+<% end %>

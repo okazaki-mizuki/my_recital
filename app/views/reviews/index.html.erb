@@ -1,0 +1,29 @@
+<h1>演奏会レビュー一覧</h1>
+
+<%= link_to "新しいレビューを追加", new_review_path, class: "btn btn-primary mb-3" %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>楽団名</th>
+      <th>指揮者</th>
+      <th>曲名</th>
+      <th>感想</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @reviews.each do |review| %>
+      <tr>
+        <td><%= review.orchestra %></td>
+        <td><%= review.conductor %></td>
+        <td><%= review.music %></td>
+        <td><%= truncate(review.impression, length: 50) %></td>
+        <td>
+          <%= link_to "表示", review_path(review), class: "btn btn-sm btn-outline-secondary" %>
+          <%= link_to "編集", edit_review_path(review), class: "btn btn-sm btn-outline-primary" %>
+          <%= link_to "削除", review_path(review),data: { turbo_method: :delete, turbo_confirm: "本当に削除しますか？" },class: "btn btn-sm btn-outline-danger" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

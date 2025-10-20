@@ -1,0 +1,23 @@
+<h1>レビュー詳細</h1>
+
+<table class="table">
+  <tr>
+    <th>楽団名</th>
+    <td><%= @review.orchestra %></td>
+  </tr>
+  <tr>
+    <th>指揮者</th>
+    <td><%= @review.conductor %></td>
+  </tr>
+  <tr>
+    <th>曲名</th>
+    <td><%= @review.music %></td>
+  </tr>
+  <tr>
+    <th>感想</th>
+    <td><%= simple_format(@review.impression) %></td>
+  </tr>
+</table>
+
+<%= link_to "編集する", edit_review_path(@review), class: "btn btn-primary" %>
+<%= link_to "一覧に戻る", reviews_path, class: "btn btn-secondary" %>
