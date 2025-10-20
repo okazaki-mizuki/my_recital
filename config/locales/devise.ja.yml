@@ -14,6 +14,8 @@ ja:
           attributes:
             password:
               too_short: "は%{count}文字以上で入力してください"
+            password_confirmation:
+              confirmation: "と%{attribute}が一致していません"
 
   errors:
     messages:
