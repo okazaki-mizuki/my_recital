@@ -24,10 +24,25 @@ ja:
       signed_in: "ログインしました。"
       signed_out: "ログアウトしました。"
       already_signed_out: "すでにログアウトしています。"
+      new:
+        sign_in: "ログイン"
+        email: "メールアドレス"
+        password: "パスワード"
+        remember_me: "ログイン状態を保持する"
+        submit: "ログイン"
+        forgot_password: "パスワードをお忘れですか？"
+
     registrations:
       signed_up: "アカウント登録が完了しました。"
       updated: "アカウント情報を更新しました。"
       destroyed: "アカウントを削除しました。"
+      new:
+        sign_up: "アカウント登録"
+        email: "メールアドレス"
+        password: "パスワード"
+        password_confirmation: "パスワード確認"
+        submit: "登録する"
+
     failure:
       invalid: "メールアドレスまたはパスワードが違います。"
       not_found_in_database: "メールアドレスまたはパスワードが違います。"
@@ -36,9 +51,14 @@ ja:
       locked: "アカウントはロックされています。"
       timeout: "セッションがタイムアウトしました。再度ログインしてください。"
       inactive: "アカウントが有効化されていません。"
+
     passwords:
       send_instructions: "パスワード再設定用のメールを送信しました。"
       updated: "パスワードを変更しました。"
+      new:
+        email: "メールアドレス"
+        submit: "パスワード再設定用メールを送信"
+
     mailer:
       confirmation_instructions:
         subject: "アカウント確認メール"
@@ -56,5 +76,6 @@ ja:
         greeting: "こんにちは %{email} さん！"
         instruction: "アカウントを解除するには、以下のリンクをクリックしてください："
         action: "アカウントを解除する"
+
     shared:
       error_messages: "%{resource}の保存に失敗しました。%{count} 件のエラーがあります。"

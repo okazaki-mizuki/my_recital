@@ -97,7 +97,7 @@
 
 - 言語：Ruby 3.1系
 
-- データベース：MySQL
+- データベース：PostgreSQL
 
 - デプロイ先：Render（予定）
 
