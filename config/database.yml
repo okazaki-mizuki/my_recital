@@ -60,4 +60,11 @@ production:
 connects_to:
   database:
     writing: primary
-    cache: primary
+    cache: cache
+
+cache:
+  <<: *default
+  database: <%= ENV.fetch("DB_NAME_CACHE", "myapp_cache") %>
+  username: <%= ENV.fetch("DB_USER", "postgres") %>
+  password: <%= ENV.fetch("DB_PASSWORD", "") %>
+  host: <%= ENV.fetch("DB_HOST", "db") %>
