@@ -53,3 +53,8 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
+
+connects_to:
+  database:
+    writing: primary
+    cache: primary
