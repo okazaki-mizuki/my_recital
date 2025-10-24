@@ -20,6 +20,11 @@ ja:
   errors:
     messages:
       not_saved: "%{resource}の保存に失敗しました。%{count} 件のエラーがあります。"
+      taken: "はすでに使用されています"
+      blank: "を入力してください"
+      too_short: "は%{count}文字以上で入力してください"
+      too_long: "は%{count}文字以内で入力してください"
+      confirmation: "が一致していません"
 
   devise:
     sessions:
