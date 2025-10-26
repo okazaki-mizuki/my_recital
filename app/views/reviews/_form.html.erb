@@ -1,9 +1,9 @@
-<%= form_with(model: review, local: true) do |form| %>
-  <% if review.errors.any? %>
+<%= form_with model: @review, data: { turbo: false } do |form| %>
+  <% if @review.errors.any? %>
     <div class="alert alert-danger">
       <h2><%= pluralize(review.errors.count, "件のエラー") %>があります:</h2>
       <ul>
-        <% review.errors.full_messages.each do |message| %>
+        <% @review.errors.full_messages.each do |message| %>
           <li><%= message %></li>
         <% end %>
       </ul>
@@ -30,5 +30,5 @@
     <%= form.text_area :impression, class: "form-control", rows: 5, required: true %>
   </div>
 
-  <%= form.submit review.new_record? ? "作成" : "更新", class: "btn btn-success" %>
+  <%= form.submit @review.new_record? ? "作成" : "更新", class: "btn btn-success" %>
 <% end %>

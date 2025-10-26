@@ -10,10 +10,19 @@ class ReviewsController < ApplicationController
   end
 
   def new
+     Rails.logger.info "=== DEBUG INFO ==="
+  Rails.logger.info "current_user: #{current_user.inspect}"
+  Rails.logger.info "user_signed_in?: #{user_signed_in?}"
+  Rails.logger.info "==================="
+  
     @review = Review.new
   end
 
   def create
+    unless current_user
+    redirect_to new_user_session_path, alert: 'ログインしてください'
+    return
+  end
     @review = current_user.reviews.build(review_params)
     if @review.save
       redirect_to @review, notice: 'レビューを登録しました。'
