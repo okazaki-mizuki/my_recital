@@ -10,10 +10,10 @@ class ReviewsController < ApplicationController
   end
 
   def new
-     Rails.logger.info "=== DEBUG INFO ==="
-  Rails.logger.info "current_user: #{current_user.inspect}"
-  Rails.logger.info "user_signed_in?: #{user_signed_in?}"
-  Rails.logger.info "==================="
+    Rails.logger.info "=== DEBUG INFO ==="
+    Rails.logger.info "current_user: #{current_user.inspect}"
+    Rails.logger.info "user_signed_in?: #{user_signed_in?}"
+    Rails.logger.info "==================="
   
     @review = Review.new
   end
